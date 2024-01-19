@@ -1,0 +1,8 @@
+
+terraform init
+terraform validate
+terraform plan -lock=false --var-file=variables.tfvars
+terraform apply --auto-approve  --var-file=variables.tfvars -lock=false
+
+terraform destroy --auto-approve  --var-file=variables.tfvars -lock=false
+
